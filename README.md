@@ -2,16 +2,23 @@
 Premier League and LaLiga live standings tables and players statistics.
 
 
-<img width="438" alt="Screen Shot 2021-12-21 at 17 31 27" src="https://user-images.githubusercontent.com/92180817/146956644-b884c341-450a-40ed-bde0-f600e8b90d52.png"><img width="482" alt="Screen Shot 2021-12-21 at 17 31 38" src="https://user-images.githubusercontent.com/92180817/146957055-606ca9f3-48fb-4576-ac32-925fc9c452ed.png">
+<img width="438" alt="Screen Shot 2021-12-21 at 17 31 27" src="https://user-images.githubusercontent.com/92180817/146958033-f8c93558-10db-4147-8f21-c066ddf3f635.png">
+
+
+<img width="482" alt="Screen Shot 2021-12-21 at 17 31 38" src="https://user-images.githubusercontent.com/92180817/146958070-1ed5787f-6a44-44fd-a23c-b5e181f29ec4.png">
 
 
 
-https://user-images.githubusercontent.com/92180817/146956669-3f12ec3c-12f3-4699-a092-c0be82ccf39c.mov
+https://user-images.githubusercontent.com/92180817/146958145-edc7caa9-7226-49d9-8a48-33345df8f1a6.mov
 
-<img width="482" alt="Screen Shot 2021-12-21 at 17 32 54" src="https://user-images.githubusercontent.com/92180817/146956676-02e9324f-ce6e-42d2-b3f1-ff8daacd7f8a.png">
+<img width="482" alt="Screen Shot 2021-12-21 at 17 32 12" src="https://user-images.githubusercontent.com/92180817/146958183-485bb6fd-760f-4533-bcdb-81725bbfc669.png">
 
 
-https://user-images.githubusercontent.com/92180817/146956680-6283fc5e-877f-4aa9-a774-d81acc3dc9e4.mov
+<img width="482" alt="Screen Shot 2021-12-21 at 17 32 54" src="https://user-images.githubusercontent.com/92180817/146958165-9545fcc3-de4d-435f-939e-a47ae4cc8663.png">
 
-<img width="482" alt="Screen Shot 2021-12-21 at 17 32 12" src="https://user-images.githubusercontent.com/92180817/146956709-ebf7885f-5bad-4532-bd6b-46b9753ac839.png">
-<img width="482" alt="Screen Shot 2021-12-21 at 17 33 42" src="https://user-images.githubusercontent.com/92180817/146956712-7b1be295-c96b-4056-bedc-aaed3dce1617.png">
+
+
+https://user-images.githubusercontent.com/92180817/146958210-fc131bd3-2f30-419a-9e37-0c362ca58982.mov
+
+
+<img width="482" alt="Screen Shot 2021-12-21 at 17 33 42" src="https://user-images.githubusercontent.com/92180817/146958251-43943956-9eb1-4a2e-a330-5a1be1855f98.png">
