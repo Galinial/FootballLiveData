@@ -28,18 +28,18 @@ class GoalsViewController: UIViewController {
         getPlayerInfo()
     }
     func getPlayerInfo(){
-        player?.statistics[0].team.logo.downloadImage(to: TeamImage)
-        teamName.text = player?.statistics[0].team.name
-        playerName.text = player?.player.name
-        goalsTotal.text = (player?.statistics[0].goals.total?.formatted() ?? "") + " - Goals"
-        assists.text = (player?.statistics[0].goals.assists?.formatted() ?? "") + " - Assists"
-        passingTotal.text = (player?.statistics[0].passes.total?.formatted() ?? "") + " - Total Passing"
-        appearences.text = (player?.statistics[0].games.appearences?.formatted() ?? "") + " - Games"
-        passingKey.text = (player?.statistics[0].passes.key?.formatted() ?? "") + " - Key Passes"
-        passingAccurate.text = (player?.statistics[0].passes.key?.formatted() ?? "") + " - Accurate Passes"
-        penalityScored.text = (player?.statistics[0].penalty.scored?.formatted() ?? "0") + " - Scored"
-        penaltyMissed.text = (player?.statistics[0].penalty.missed?.formatted() ?? "0") + " - Missed"
-        player?.player.photo.downloadImage(to: playerImage)
+        player?.getStatisticts().team.logo.downloadImage(to: TeamImage)
+        teamName.text = player?.getStatisticts().team.name
+        playerName.text = player?.details.name
+        goalsTotal.text = (player?.getStatisticts().goals.total?.formatted() ?? "") + " - Goals"
+        assists.text = (player?.getStatisticts().goals.assists?.formatted() ?? "") + " - Assists"
+        passingTotal.text = (player?.getStatisticts().passes.total?.formatted() ?? "") + " - Total Passing"
+        appearences.text = (player?.getStatisticts().games.appearences?.formatted() ?? "") + " - Games"
+        passingKey.text = (player?.getStatisticts().passes.key?.formatted() ?? "") + " - Key Passes"
+        passingAccurate.text = (player?.getStatisticts().passes.key?.formatted() ?? "") + " - Accurate Passes"
+        penalityScored.text = (player?.getStatisticts().penalty.scored?.formatted() ?? "0") + " - Scored"
+        penaltyMissed.text = (player?.getStatisticts().penalty.missed?.formatted() ?? "0") + " - Missed"
+        player?.details.photo.downloadImage(to: playerImage)
         
     }
     func backgroundImage(){

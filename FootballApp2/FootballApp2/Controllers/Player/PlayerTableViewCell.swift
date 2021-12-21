@@ -20,14 +20,18 @@ class PlayerTableViewCell: UITableViewCell {
         settingBackgroundCard()
     }
 
+  
     
-    func populate(details:PlayersDetails) {
+    func populate(player:PlayerResponse) {
+        let details = player.details
+        let statisticts = player.getStatisticts()
         self.age.text = "age: " + String(details.age)
         self.name.text = "name: " + details.name
         self.nationality.text = "nationality: " + details.nationality
-        
         details.photo.downloadImage(to: playerImage)
+    
     }
+    
     func settingBackgroundCard(){
         backgroundCardView.backgroundColor = UIColor.white
         contentView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)

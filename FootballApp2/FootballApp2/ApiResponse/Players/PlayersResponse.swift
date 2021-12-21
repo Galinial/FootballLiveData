@@ -7,8 +7,16 @@ struct ApiResponse:Decodable {
 }
 
 struct PlayerResponse:Decodable {
-    var player:PlayersDetails
-    var statistics:[PlayerStatistics]
+    var details:PlayersDetails
+    private var statistics:[PlayerStatistics]
+    enum CodingKeys : String,CodingKey {
+        case details = "player",
+             statistics = "statistics"
+    }
+    
+    func getStatisticts() -> PlayerStatistics{
+        return statistics[0]
+    }
 }
 
 struct PlayersDetails:Decodable{

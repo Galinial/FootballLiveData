@@ -43,8 +43,8 @@ class PlayersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlayerTableViewCell
-        let details = players[indexPath.row]
-        cell.populate(details: details.player)
+        let player = players[indexPath.row]
+        cell.populate(player: player)
         
         return cell
     }
