@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q1W-aj-FGK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leagues View Controller-->
+        <scene sceneID="RVt-5m-REy">
+            <objects>
+                <viewController id="e0j-R5-MAL" customClass="LeaguesViewController" customModule="FootballApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRf-YX-Ten">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2a-4U-M9V">
+                                <rect key="frame" x="32" y="120" width="350" height="320"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="premierLeague.png">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jl3-JW-Fqv" kind="show" identifier="showPremierLeague" id="DhF-Io-hNV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOV-aV-G5S">
+                                <rect key="frame" x="32" y="456" width="350" height="91"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="laligalogo.png">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Jl3-JW-Fqv" kind="show" identifier="showLaLiga" id="hKz-pj-4ZA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ylR-rA-xPV"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xOV-aV-G5S" firstAttribute="top" secondItem="w2a-4U-M9V" secondAttribute="bottom" constant="16" id="AsX-KU-coZ"/>
+                            <constraint firstItem="w2a-4U-M9V" firstAttribute="leading" secondItem="ylR-rA-xPV" secondAttribute="leading" constant="32" id="EU2-mW-ica"/>
+                            <constraint firstItem="ylR-rA-xPV" firstAttribute="trailing" secondItem="xOV-aV-G5S" secondAttribute="trailing" constant="32" id="i53-2i-bd9"/>
+                            <constraint firstItem="xOV-aV-G5S" firstAttribute="leading" secondItem="ylR-rA-xPV" secondAttribute="leading" constant="32" id="lgs-YC-fvK"/>
+                            <constraint firstItem="w2a-4U-M9V" firstAttribute="top" secondItem="ylR-rA-xPV" secondAttribute="top" constant="32" id="ncU-2K-hf0"/>
+                            <constraint firstItem="ylR-rA-xPV" firstAttribute="trailing" secondItem="w2a-4U-M9V" secondAttribute="trailing" constant="32" id="zU0-la-l6s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WKr-68-wln"/>
+                    <connections>
+                        <outlet property="laLiga" destination="xOV-aV-G5S" id="Hl6-jP-GTT"/>
+                        <outlet property="premierLeague" destination="w2a-4U-M9V" id="xSU-7O-lCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KD4-gW-DqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.2608695652174" y="55.580357142857139"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="pUH-cb-qQ9">
+            <objects>
+                <viewController id="Jl3-JW-Fqv" customClass="MenuViewController" customModule="FootballApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Woo-Ab-1ep">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfE-h5-bIH">
+                                <rect key="frame" x="32" y="120" width="350" height="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Table 2021 - 2022">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                    <imageReference key="image" image="table" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" title=" Table 2021 - 2022">
+                                    <imageReference key="image" image="table" catalog="system" symbolScale="medium"/>
+                                    <backgroundConfiguration key="background" cornerRadius="18">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yIL-aw-eha" kind="show" identifier="showTableStandings" id="bM9-GX-Oyg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PPi-9F-o0q">
+                                <rect key="frame" x="32" y="342" width="350" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJx-ib-5AD">
+                                <rect key="frame" x="32" y="196" width="350" height="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Top Scorrer">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                    <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" title=" Top Scorrer">
+                                    <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="medium"/>
+                                    <backgroundConfiguration key="background" cornerRadius="18">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="J90-vv-OQK" kind="show" identifier="showTopScorrer" id="yRs-VJ-Lrq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PdB-6q-Q0m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VfE-h5-bIH" firstAttribute="leading" secondItem="PdB-6q-Q0m" secondAttribute="leading" constant="32" id="2Fd-vN-OGX"/>
+                            <constraint firstItem="XJx-ib-5AD" firstAttribute="top" secondItem="VfE-h5-bIH" secondAttribute="bottom" constant="32" id="4AU-DG-Egx"/>
+                            <constraint firstItem="XJx-ib-5AD" firstAttribute="leading" secondItem="PdB-6q-Q0m" secondAttribute="leading" constant="32" id="Fur-2e-mtN"/>
+                            <constraint firstItem="PPi-9F-o0q" firstAttribute="leading" secondItem="PdB-6q-Q0m" secondAttribute="leading" constant="32" id="ID4-sE-e2m"/>
+                            <constraint firstItem="PdB-6q-Q0m" firstAttribute="trailing" secondItem="PPi-9F-o0q" secondAttribute="trailing" constant="32" id="Omn-fh-tNw"/>
+                            <constraint firstItem="VfE-h5-bIH" firstAttribute="top" secondItem="PdB-6q-Q0m" secondAttribute="top" constant="32" id="ZWh-Qg-ieV"/>
+                            <constraint firstItem="PdB-6q-Q0m" firstAttribute="trailing" secondItem="XJx-ib-5AD" secondAttribute="trailing" constant="32" id="mYd-Kf-dnN"/>
+                            <constraint firstItem="PPi-9F-o0q" firstAttribute="top" secondItem="XJx-ib-5AD" secondAttribute="bottom" constant="128" id="xGw-1K-fBK"/>
+                            <constraint firstItem="PdB-6q-Q0m" firstAttribute="trailing" secondItem="VfE-h5-bIH" secondAttribute="trailing" constant="32" id="zjN-2H-5dn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iy0-Hd-CkW"/>
+                    <connections>
+                        <outlet property="leagueImage" destination="PPi-9F-o0q" id="V1x-h8-aU0"/>
+                        <outlet property="tableButton" destination="VfE-h5-bIH" id="Y83-NI-3A4"/>
+                        <outlet property="topScorrerButton" destination="XJx-ib-5AD" id="fs8-SD-wrC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4S-iy-4g8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.50724637681162" y="55.580357142857139"/>
+        </scene>
+        <!--Table Table View Controller-->
+        <scene sceneID="tfO-po-Duf">
+            <objects>
+                <tableViewController id="yIL-aw-eha" customClass="TableTableViewController" customModule="FootballApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="24A-Ux-MTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yWz-q2-nhf">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yWz-q2-nhf" id="vzj-dU-38E">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="yIL-aw-eha" id="6SS-Oi-yi1"/>
+                            <outlet property="delegate" destination="yIL-aw-eha" id="oCA-1h-YGw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3lS-tL-vl6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPc-dD-dHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="-339"/>
+        </scene>
+        <!--Players Table View Controller-->
+        <scene sceneID="YYN-Al-D4r">
+            <objects>
+                <tableViewController id="J90-vv-OQK" customClass="PlayersTableViewController" customModule="FootballApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="37K-fG-WTt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="49" id="fJV-rR-9ta" customClass="PlayerTableViewCell" customModule="FootballApp2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fJV-rR-9ta" id="ch9-6U-Nd1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="93L-Gx-c2P" kind="showDetail" identifier="showGoals" id="dDb-PU-Nar"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="J90-vv-OQK" id="jp9-k9-SjI"/>
+                            <outlet property="delegate" destination="J90-vv-OQK" id="ygw-2x-RIO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pPH-q2-mDI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6O-IY-dkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="347"/>
+        </scene>
+        <!--Goals View Controller-->
+        <scene sceneID="0yB-sL-8fm">
+            <objects>
+                <viewController id="93L-Gx-c2P" customClass="GoalsViewController" customModule="FootballApp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q1Z-MA-eUl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-t3-gXH">
+                                <rect key="frame" x="221" y="626" width="185" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Os1-zD-7I3">
+                                <rect key="frame" x="20" y="626" width="193" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F5d-3o-cOj">
+                                <rect key="frame" x="8" y="8" width="398" height="616"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team - " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHs-eA-MiX">
+                                        <rect key="frame" x="154.5" y="0.0" width="89" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbF-Xp-Sgj">
+                                        <rect key="frame" x="143.5" y="39" width="111.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name - " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3F-vS-knh">
+                                        <rect key="frame" x="109.5" y="78" width="179" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="player name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqT-Ob-CQd">
+                                        <rect key="frame" x="137.5" y="117" width="123.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appearences - " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-aQ-Cyr">
+                                        <rect key="frame" x="104" y="156" width="190" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="appearences" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzF-mi-Wwr">
+                                        <rect key="frame" x="133.5" y="195" width="131" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals -" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxB-vd-Wlf">
+                                        <rect key="frame" x="155" y="234" width="88" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwa-dR-ngU">
+                                        <rect key="frame" x="174" y="273" width="50.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assists" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kh-9c-g0R">
+                                        <rect key="frame" x="161.5" y="312" width="75.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passing - " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQY-jd-EBY">
+                                        <rect key="frame" x="138.5" y="351" width="121" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruL-3P-8GQ">
+                                        <rect key="frame" x="174" y="390" width="50.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-au-w0c">
+                                        <rect key="frame" x="180" y="429" width="38" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accurate" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-Tb-zMX">
+                                        <rect key="frame" x="153" y="468" width="92" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penaltis - " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J6-pa-ULd">
+                                        <rect key="frame" x="137" y="507" width="124" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scored" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vP-h3-DYu">
+                                        <rect key="frame" x="163" y="546" width="72" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missed" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBz-oN-k8U">
+                                        <rect key="frame" x="163" y="585" width="72" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eXz-9g-Vtg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eXz-9g-Vtg" firstAttribute="trailing" secondItem="F5d-3o-cOj" secondAttribute="trailing" constant="8" id="1bS-9S-cpa"/>
+                            <constraint firstItem="F5d-3o-cOj" firstAttribute="leading" secondItem="eXz-9g-Vtg" secondAttribute="leading" constant="8" id="3Ph-IE-fJB"/>
+                            <constraint firstItem="F5d-3o-cOj" firstAttribute="top" secondItem="eXz-9g-Vtg" secondAttribute="top" constant="8" id="P5A-aV-0Ac"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gdM-GC-7YL"/>
+                    <connections>
+                        <outlet property="TeamImage" destination="OPD-t3-gXH" id="Ew9-lr-r1Y"/>
+                        <outlet property="appearences" destination="EzF-mi-Wwr" id="xTd-JB-H1c"/>
+                        <outlet property="assists" destination="6Kh-9c-g0R" id="3g8-JD-Ry9"/>
+                        <outlet property="goalsTotal" destination="Nwa-dR-ngU" id="dCv-eP-bFg"/>
+                        <outlet property="passingAccurate" destination="J8i-Tb-zMX" id="uFw-Bw-tKb"/>
+                        <outlet property="passingKey" destination="d5q-au-w0c" id="NoD-AS-E4e"/>
+                        <outlet property="passingTotal" destination="ruL-3P-8GQ" id="WpB-MY-6aa"/>
+                        <outlet property="penalityScored" destination="9vP-h3-DYu" id="jVK-d7-D0f"/>
+                        <outlet property="penaltyMissed" destination="SBz-oN-k8U" id="cmw-nr-Do1"/>
+                        <outlet property="playerImage" destination="Os1-zD-7I3" id="FS0-wz-cgW"/>
+                        <outlet property="playerName" destination="jqT-Ob-CQd" id="Pia-W9-Ut3"/>
+                        <outlet property="teamName" destination="EbF-Xp-Sgj" id="Z5w-Qj-zAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZt-r0-019" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.971014492754" y="346.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HPe-Ii-M9L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q1W-aj-FGK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5kc-q6-X0v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e0j-R5-MAL" kind="relationship" relationship="rootViewController" id="TlA-YT-Qr2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qk-8M-H6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-972" y="56"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hKz-pj-4ZA"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="laligalogo.png" width="76.800003051757812" height="76.800003051757812"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="premierLeague.png" width="320" height="320"/>
+        <image name="table" catalog="system" width="128" height="93"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
