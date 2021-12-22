@@ -25,19 +25,25 @@
                         <rect key="frame" x="16" y="16" width="163" height="132"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKB-Zc-KjA">
-                                <rect key="frame" x="0.0" y="0.0" width="163" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR9-ZG-a6d">
-                                <rect key="frame" x="0.0" y="44" width="163" height="44"/>
+                                <rect key="frame" x="0.0" y="33" width="163" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uH-Xu-l5s">
-                                <rect key="frame" x="0.0" y="88" width="163" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="163" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHG-OV-6Sg">
+                                <rect key="frame" x="0.0" y="99" width="163" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,6 +73,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="Goal" destination="GHG-OV-6Sg" id="BKx-tk-3WY"/>
                 <outlet property="age" destination="1uH-Xu-l5s" id="WlE-sK-8DF"/>
                 <outlet property="backgroundCardView" destination="Icq-kL-tgu" id="7iK-no-wKp"/>
                 <outlet property="name" destination="WR9-ZG-a6d" id="WiC-fn-q7s"/>

@@ -11,6 +11,7 @@ class PlayerTableViewCell: UITableViewCell {
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var nationality: UILabel!
+    @IBOutlet weak var Goal: UILabel!
     
     @IBOutlet weak var backgroundCardView: UIView!
     @IBOutlet weak var playerImage: UIImageView!
@@ -25,9 +26,10 @@ class PlayerTableViewCell: UITableViewCell {
     func populate(player:PlayerResponse) {
         let details = player.details
         let statisticts = player.getStatisticts()
-        self.age.text = "age: " + String(details.age)
-        self.name.text = "name: " + details.name
-        self.nationality.text = "nationality: " + details.nationality
+        self.Goal.text = "Goals: " + String(statisticts.goals.total ?? 0)
+        self.age.text = "Age: " + String(details.age)
+        self.name.text = "Name: " + details.name
+        self.nationality.text = "Nationality: " + details.nationality
         details.photo.downloadImage(to: playerImage)
     
     }

@@ -28,7 +28,7 @@ class StandingsTableViewCell: UITableViewCell {
         details.team.logo.downloadImage(to: teamImage)
         self.nameLabel.text = "Club - " + String(details.team.name)
         self.positionLabel.text = "Position - " + String(details.rank)
-        self.positionLabel.text = "Points - " + String(details.points)
+        self.pointsLabel.text = "Points - " + String(details.points)
         self.GDLabel.text = "GD - " + String(details.goalsDiff)
         self.formLabel.text = "Form - " + String(details.form)
     }
