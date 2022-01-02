@@ -6,11 +6,12 @@
 //
 
 import UIKit
-
+import Combine
 class PlayersTableViewController: UITableViewController {
 
     var leagueId:Int?
     var players:[PlayerResponse] = []
+    var tasks = Set<AnyCancellable>()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,15 +20,22 @@ class PlayersTableViewController: UITableViewController {
         
         self.tableView.separatorStyle = .none
         
-        
-        
-        ApiManager.requestTopScorrer(leagueId:self.leagueId ?? 39) { [weak self] result in
-            let details = result.response
-            self?.players = details
-            DispatchQueue.main.async {
+        ApiManager.requestTopScorrer(leagueId: self.leagueId ?? 39)
+            .receive(on: DispatchQueue.main )
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    print("Finished Successfuly")
+                    break
+                case .failure:
+                    print("Failed")
+                    break
+                }
+            } receiveValue: { [weak self] result in
+                let details = result.response
+                self?.players = details
                 self?.tableView.reloadData()
-            }
-        }
+            }.store(in: &tasks)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
