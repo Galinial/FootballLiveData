@@ -14,11 +14,8 @@
 		3C20B61D276E330B00FA5BDA /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20B61B276E330B00FA5BDA /* StandingsTableViewCell.swift */; };
 		3C20B61E276E330B00FA5BDA /* StandingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C20B61C276E330B00FA5BDA /* StandingsTableViewCell.xib */; };
 		3C492AAA2768C183002E78AE /* StandingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C492AA92768C183002E78AE /* StandingsResponse.swift */; };
-		3C492AAC276924BB002E78AE /* mbappe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C492AAB276924BB002E78AE /* mbappe.jpeg */; };
 		3C4E30DD2766365700CA2859 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E30DC2766365700CA2859 /* GoalsViewController.swift */; };
 		3C4E30E22766744F00CA2859 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E30E12766744F00CA2859 /* LeaguesViewController.swift */; };
-		3C4E30FA2766811000CA2859 /* premierLeague.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4E30F92766811000CA2859 /* premierLeague.png */; };
-		3C4E30FC276681D200CA2859 /* laligalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4E30FB276681D200CA2859 /* laligalogo.png */; };
 		3C73BE61275E3CA800949C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73BE60275E3CA800949C15 /* AppDelegate.swift */; };
 		3C73BE63275E3CA800949C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73BE62275E3CA800949C15 /* SceneDelegate.swift */; };
 		3C73BE6B275E3CA800949C15 /* FootballApp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C73BE69275E3CA800949C15 /* FootballApp2.xcdatamodeld */; };
@@ -28,11 +25,7 @@
 		3C73BE7C275E4F9E00949C15 /* PlayersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73BE7B275E4F9E00949C15 /* PlayersResponse.swift */; };
 		3C8AC180276747B9003F5B24 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AC17F276747B9003F5B24 /* MenuViewController.swift */; };
 		3C8AC18527674B04003F5B24 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8AC18427674B04003F5B24 /* TableTableViewController.swift */; };
-		3C8AC18727676634003F5B24 /* football-wallpaper-whatspaper-18.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AC18627676634003F5B24 /* football-wallpaper-whatspaper-18.jpeg */; };
-		3C8AC18B27676845003F5B24 /* photo-1543351611-58f69d7c1781.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C8AC18A27676845003F5B24 /* photo-1543351611-58f69d7c1781.jpeg */; };
 		3CD4004C276E575400F6FA68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4004B276E575400F6FA68 /* Main.storyboard */; };
-		3CD4004E276E593200F6FA68 /* champions.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4004D276E593200F6FA68 /* champions.png */; };
-		3CD40050276E5A2F00F6FA68 /* championsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4004F276E5A2F00F6FA68 /* championsIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +36,8 @@
 		3C20B61B276E330B00FA5BDA /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
 		3C20B61C276E330B00FA5BDA /* StandingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsTableViewCell.xib; sourceTree = "<group>"; };
 		3C492AA92768C183002E78AE /* StandingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsResponse.swift; sourceTree = "<group>"; };
-		3C492AAB276924BB002E78AE /* mbappe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mbappe.jpeg; sourceTree = "<group>"; };
 		3C4E30DC2766365700CA2859 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		3C4E30E12766744F00CA2859 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
-		3C4E30F92766811000CA2859 /* premierLeague.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = premierLeague.png; sourceTree = "<group>"; };
-		3C4E30FB276681D200CA2859 /* laligalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laligalogo.png; sourceTree = "<group>"; };
 		3C73BE5D275E3CA800949C15 /* FootballApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C73BE60275E3CA800949C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C73BE62275E3CA800949C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,11 +49,7 @@
 		3C73BE7B275E4F9E00949C15 /* PlayersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersResponse.swift; sourceTree = "<group>"; };
 		3C8AC17F276747B9003F5B24 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3C8AC18427674B04003F5B24 /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
-		3C8AC18627676634003F5B24 /* football-wallpaper-whatspaper-18.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "football-wallpaper-whatspaper-18.jpeg"; sourceTree = "<group>"; };
-		3C8AC18A27676845003F5B24 /* photo-1543351611-58f69d7c1781.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1543351611-58f69d7c1781.jpeg"; sourceTree = "<group>"; };
 		3CD4004B276E575400F6FA68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		3CD4004D276E593200F6FA68 /* champions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = champions.png; sourceTree = "<group>"; };
-		3CD4004F276E5A2F00F6FA68 /* championsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = championsIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +115,6 @@
 				3C73BE60275E3CA800949C15 /* AppDelegate.swift */,
 				3C73BE62275E3CA800949C15 /* SceneDelegate.swift */,
 				3C73BE6C275E3CA800949C15 /* Assets.xcassets */,
-				3CD4004F276E5A2F00F6FA68 /* championsIcon.png */,
-				3CD4004D276E593200F6FA68 /* champions.png */,
-				3C492AAB276924BB002E78AE /* mbappe.jpeg */,
-				3C8AC18A27676845003F5B24 /* photo-1543351611-58f69d7c1781.jpeg */,
-				3C8AC18627676634003F5B24 /* football-wallpaper-whatspaper-18.jpeg */,
-				3C4E30F92766811000CA2859 /* premierLeague.png */,
-				3C4E30FB276681D200CA2859 /* laligalogo.png */,
 				3CD4004B276E575400F6FA68 /* Main.storyboard */,
 				3C73BE6E275E3CA800949C15 /* LaunchScreen.storyboard */,
 				3C73BE71275E3CA800949C15 /* Info.plist */,
@@ -257,18 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD4004E276E593200F6FA68 /* champions.png in Resources */,
 				3C1614BD275FD9F400392CE9 /* PlayerTableViewCell.xib in Resources */,
-				3C8AC18B27676845003F5B24 /* photo-1543351611-58f69d7c1781.jpeg in Resources */,
-				3C4E30FA2766811000CA2859 /* premierLeague.png in Resources */,
-				3C492AAC276924BB002E78AE /* mbappe.jpeg in Resources */,
 				3CD4004C276E575400F6FA68 /* Main.storyboard in Resources */,
 				3C20B61E276E330B00FA5BDA /* StandingsTableViewCell.xib in Resources */,
-				3C8AC18727676634003F5B24 /* football-wallpaper-whatspaper-18.jpeg in Resources */,
 				3C73BE70275E3CA800949C15 /* LaunchScreen.storyboard in Resources */,
 				3C73BE6D275E3CA800949C15 /* Assets.xcassets in Resources */,
-				3C4E30FC276681D200CA2859 /* laligalogo.png in Resources */,
-				3CD40050276E5A2F00F6FA68 /* championsIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

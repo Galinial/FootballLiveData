@@ -2,7 +2,7 @@ import Foundation
 import Combine
 class ApiManager {
     
-    static func requestTopScorrer(leagueId:Int) -> AnyPublisher<ApiResponse,Error> {
+    static func requestTopScorrer(leagueId:Int)  -> AnyPublisher<ApiResponse,Error> {
     let headers = [
         "x-rapidapi-host": "api-football-beta.p.rapidapi.com",
         "x-rapidapi-key": "ecac8327bemsh99f7126b1ae0bb4p169414jsn91f54055c4a7"
