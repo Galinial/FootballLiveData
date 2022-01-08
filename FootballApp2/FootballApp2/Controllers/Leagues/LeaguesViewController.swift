@@ -8,6 +8,7 @@
 import UIKit
 
 class LeaguesViewController: UIViewController {
+    
     @IBOutlet weak var premierLeague: UIButton!
     @IBOutlet weak var laLiga: UIButton!
     
@@ -16,7 +17,6 @@ class LeaguesViewController: UIViewController {
         backgroundImage()
         premierLeague.toCardBackgroundLeague()
         laLiga.toCardBackgroundLeague()
-        
             
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

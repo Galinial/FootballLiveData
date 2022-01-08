@@ -52,7 +52,6 @@ class PlayersTableViewController: UITableViewController{
                 self?.tableView.reloadData()
             }.store(in: &tasks)
         filteredPlayers = players
-        
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,16 +86,14 @@ class PlayersTableViewController: UITableViewController{
           }
         return cell
     }
-        
-        
-//      old way
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlayerTableViewCell
-//        let player = players[indexPath.row]
-//        cell.populate(player: player)
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showGoals", sender: filteredPlayers[indexPath.row])
+        if resultSearchController.searchBar.text == ""{
+        performSegue(withIdentifier: "showGoals", sender: players[indexPath.row])
+        }else{
+            performSegue(withIdentifier: "showGoals", sender: filteredPlayers[indexPath.row])
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
