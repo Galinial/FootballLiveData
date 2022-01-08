@@ -79,11 +79,7 @@ class TableTableViewController: UITableViewController {
             cell.populate(details: team)
           }
         return cell
-
-//        let details = teams[indexPath.row]
-//        cell.populate(details: details.self)
-
-        return cell
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
